@@ -110,6 +110,8 @@ class Program
 
 		// Add references based on the required dependencies
 		RunDotnetCommand($"add \"{webPath}\\{new DirectoryInfo(webPath).Name}.csproj\" reference \"{commonPath}\\{new DirectoryInfo(commonPath).Name}.csproj\"");
+		RunDotnetCommand($"add \"{webPath}\\{new DirectoryInfo(webPath).Name}.csproj\" reference \"{dataPath}\\{new DirectoryInfo(dataPath).Name}.csproj\"");
+		RunDotnetCommand($"add \"{webPath}\\{new DirectoryInfo(webPath).Name}.csproj\" reference \"{iocConfigPath}\\{new DirectoryInfo(iocConfigPath).Name}.csproj\"");
 		RunDotnetCommand($"add \"{dataPath}\\{new DirectoryInfo(dataPath).Name}.csproj\" reference \"{entitiesPath}\\{new DirectoryInfo(entitiesPath).Name}.csproj\"");
 		RunDotnetCommand($"add \"{dataPath}\\{new DirectoryInfo(dataPath).Name}.csproj\" reference \"{viewModelsPath}\\{new DirectoryInfo(viewModelsPath).Name}.csproj\"");
 		RunDotnetCommand($"add \"{iocConfigPath}\\{new DirectoryInfo(iocConfigPath).Name}.csproj\" reference \"{dataPath}\\{new DirectoryInfo(dataPath).Name}.csproj\"");
