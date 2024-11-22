@@ -77,11 +77,13 @@ dotnet tool install --global --add-source ./bin/Release Anion
 ### 5. How to use
 After building the project through Visual Studio, either using CMD outside of Visual Studio or the Package Manager Console in Visual Studio, by running the following command, all the built files and references are added to each.
 
-> **Note**: When you run this command, a new window will open and give you a warning about reloading the solution. You must click the Reload button after the tool finishes. If you click it while the tool is running, Visual Studio will not be able to automatically recognize the new files and you will have to manually add each of the projects from the path **`Right click on Solution > Add > Existing Project > Select project`**.
-![Reload Alert ](https://github.com/pezhvak98/Anion/blob/main/readme-assets/reload-alert.png)
 ``` bash
 Anion --Generate
 ```
+> **Note**: When you run this command, a new window will open and give you a warning about reloading the solution. You must click the Reload button after the tool finishes. If you click it while the tool is running, Visual Studio will not be able to automatically recognize the new files and you will have to manually add each of the projects from the path **`Right click on Solution > Add > Existing Project > Select project`**.
+
+![Reload Alert ](https://github.com/pezhvak98/Anion/blob/main/readme-assets/reload-alert.png)
+
 Example Output:
 ``` bash
 Created: ../YourProject.Common
