@@ -93,6 +93,10 @@ Onion architecture Class Libraries created and added to the solution successfull
 IMPORTANT: Please click 'Reload' in Visual Studio when prompted to apply changes.
 
 ```
+
+> It is recommended that after the tool finishes and reloads the project, create a folder called `src` and place all the layers in it so that your project is better managed than before.
+
+
 ## Uninstall
 If for any reason you decide to remove this tool, you can remove it globally by simply running the following command:
 ``` bash
